@@ -35,7 +35,7 @@ local replacementMoveset = {
     move3 = { animationId = "rbxassetid://18896127525", startingTime = 0.3, endingTime = 2.2 },
     move4 = { animationId = "rbxassetid://100558589307006", startingTime = 0, endingTime = 3.5, speed = 1 },
     dash = { animationId = "rbxassetid://17838006839", startingTime = 0, endingTime = 1 },
-    ult = { animationId = "rbxassetid://107649573628906", startingTime = 0, endingTime = 3 },
+    ult = { animationId = "rbxassetid://18435303746", startingTime = 0, endingTime = 3 },
     wallcombo = { animationId = "rbxassetid://16311141574", startingTime = 0, endingTime = 5, speed = 1.5 },
     move5 = { animationId = "rbxassetid://18440406788", startingTime = 0, endingTime = 10, speed = 1 }
 }
@@ -88,7 +88,7 @@ local function replaceMoveAnimation(humanoid)
 
 				  task.wait(5.6)
 
-				  message = "Ice beatdown 氷の激怒が打ち倒す❄️"
+				  message = "Ice beatdown Counter 氷の激怒が打ち倒す❄️"
                   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
                 end
 
