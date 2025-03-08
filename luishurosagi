@@ -140,3 +140,18 @@ while true do
 
     game:GetService("RunService").Heartbeat:Wait()
 end
+
+local Test =  game.ReplicatedStorage.Emotes.VFX.VfxMods.FS.vfx.Aura.HumanoidRootPart.Torso
+
+local test = Test:Clone()
+test.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+
+for _, child in ipairs(test:GetChildren()) do
+	if child:IsA("ParticleEmitter") then
+
+		child.Color = ColorSequence.new(Color3.new(0.698039, 0.933333, 1)) -- its set to one because its vfx lolo delete if u want
+		child:Emit(1)
+		child.Enabled = true
+	end
+end
