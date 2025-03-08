@@ -141,7 +141,7 @@ while true do
     game:GetService("RunService").Heartbeat:Wait()
 end
 
-local Test =  game.Workspace.Live.Imaanthehatman.Torso.GreenAura
+local Test =  game.ReplicatedStorage.Emotes.VFX.VfxMods.FS.vfx.Aura.HumanoidRootPart.Torso
 
 local test = Test:Clone()
 test.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
